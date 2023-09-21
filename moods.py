@@ -4,7 +4,6 @@ from bs4 import BeautifulSoup
 import re
 import pickle
 import base64
-# import boto3
 from transformers import (AutoTokenizer, BartForConditionalGeneration)
 
 def get_img(file):
