@@ -5,7 +5,7 @@ import re
 import pickle
 import base64
 import boto3
-from transformers import (AutoTokenizer, BartForConditionalGeneration)
+# from transformers import (AutoTokenizer, BartForConditionalGeneration)
 
 def get_img(file):
         with open(file, "rb") as f:
@@ -37,13 +37,13 @@ def main():
         try:
             # Retrieve the pickle file from S3
             response = s3.get_object(Bucket=BUCKET_NAME, Key=KEY)
-            st.warning('got my pickle?')
+            # st.warning('got my pickle?')
             # Read the pickle data from the response
             pickle_data = response['Body'].read()
-            st.warning('preparing my pickle')
+            # st.warning('preparing my pickle')
             # Deserialize the pickle data
             loaded_data = pickle.loads(pickle_data)
-            st.warning('loading the pickle')
+            # st.warning('loading the pickle')
             return loaded_data
             # Now, 'loaded_data' contains the deserialized data from "best_model1.pkl"
         except Exception as e:
@@ -75,20 +75,20 @@ def main():
 
     user_input = get_text_from_link(url)
 
-    model_name = "facebook/bart-large-xsum"
-    tokenizer = AutoTokenizer.from_pretrained(model_name)
-    model = BartForConditionalGeneration.from_pretrained(model_name)
+    # model_name = "facebook/bart-large-xsum"
+    # tokenizer = AutoTokenizer.from_pretrained(model_name)
+    # model = BartForConditionalGeneration.from_pretrained(model_name)
 
-    def generate_summaries(model, text, max_length=100):
-        """
-        Function to generate text summaries using the summarization model.
-        """
-        batch = tokenizer([text], truncation=True, padding="longest", 
-                        return_tensors="pt")
+    # def generate_summaries(model, text, max_length=100):
+    #     """
+    #     Function to generate text summaries using the summarization model.
+    #     """
+    #     batch = tokenizer([text], truncation=True, padding="longest", 
+    #                     return_tensors="pt")
         
-        translated = model.generate(**batch, max_length=max_length)
-        tgt_text = tokenizer.batch_decode(translated, skip_special_tokens=True)
-        return tgt_text[0]
+    #     translated = model.generate(**batch, max_length=max_length)
+    #     tgt_text = tokenizer.batch_decode(translated, skip_special_tokens=True)
+    #     return tgt_text[0]
 
 
    
@@ -136,7 +136,7 @@ def main():
         text_container.write("Fetched Text:")
         text_container.write(st.session_state.fetched_text)
         # text = df['content.clean'].iloc[3] # CHANGE THIS
-        st.warning(generate_summaries(model, st.session_state.fetched_text))
+        # st.warning(generate_summaries(model, st.session_state.fetched_text))
     
     
     classify_container = st.container()
