@@ -5,7 +5,6 @@ aiosignal==1.3.1
 ansi2html==1.8.0
 asttokens==2.2.1
 async-timeout==4.0.2
-backcall @ file:///home/conda/feedstock_root/build_artifacts/backcall_1592338393461/work
 backports.functools-lru-cache @ file:///home/conda/feedstock_root/build_artifacts/backports.functools_lru_cache_1687772187254/work
 catboost==1.2
 certifi==2023.7.22
@@ -13,7 +12,6 @@ charset-normalizer==3.2.0
 click==8.1.7
 cloudpickle==2.2.1
 cmdstanpy==1.1.0
-colorama @ file:///home/conda/feedstock_root/build_artifacts/colorama_1666700638685/work
 comm @ file:///home/conda/feedstock_root/build_artifacts/comm_1691044910542/work
 contourpy==1.1.1
 convertdate==2.4.0
@@ -21,10 +19,6 @@ cycler==0.11.0
 Cython==0.29.36
 darts==0.24.0
 dash==2.11.1
-debugpy @ file:///C:/b/abs_c0y1fjipt2/croot/debugpy_1690906864587/work
-decorator @ file:///home/conda/feedstock_root/build_artifacts/decorator_1641555617451/work
-exceptiongroup @ file:///home/conda/feedstock_root/build_artifacts/exceptiongroup_1692026125334/work
-executing @ file:///home/conda/feedstock_root/build_artifacts/executing_1667317341051/work
 filelock==3.12.4
 Flask==2.2.5
 fonttools==4.42.1
@@ -37,15 +31,9 @@ holidays==0.28
 huggingface-hub==0.17.2
 idna==3.4
 imbalanced-learn==0.11.0
-importlib-metadata @ file:///home/conda/feedstock_root/build_artifacts/importlib-metadata_1688754491823/work
 importlib-resources==6.0.0
-ipykernel @ file:///D:/bld/ipykernel_1693880431923/work
-ipython @ file:///D:/bld/ipython_1693579916565/work
 itsdangerous==2.1.2
-jedi @ file:///home/conda/feedstock_root/build_artifacts/jedi_1690896916983/work
-joblib==1.3.2
-jupyter_client @ file:///home/conda/feedstock_root/build_artifacts/jupyter_client_1693317508789/work
-jupyter_core @ file:///D:/bld/jupyter_core_1686775767894/work
+xjoblib==1.3.2
 kiwisolver==1.4.5
 langdetect==1.0.9
 lightgbm==4.0.0
@@ -53,38 +41,26 @@ lightning-utilities==0.9.0
 llvmlite==0.40.1
 LunarCalendar==0.0.9
 matplotlib==3.8.0
-matplotlib-inline @ file:///home/conda/feedstock_root/build_artifacts/matplotlib-inline_1660814786464/work
 mpmath==1.3.0
 multidict==6.0.4
-nest-asyncio @ file:///home/conda/feedstock_root/build_artifacts/nest-asyncio_1664684991461/work
 networkx==3.1
 nfoursid==1.0.1
 nltk==3.8.1
 numba==0.57.1
 numpy==1.26.0
 package-name==0.1
-packaging @ file:///home/conda/feedstock_root/build_artifacts/packaging_1681337016113/work
 pandas==2.1.1
-parso @ file:///home/conda/feedstock_root/build_artifacts/parso_1638334955874/work
 patsy==0.5.3
-pickleshare @ file:///home/conda/feedstock_root/build_artifacts/pickleshare_1602536217715/work
 Pillow==10.0.1
-platformdirs @ file:///home/conda/feedstock_root/build_artifacts/platformdirs_1690813113769/work
 plotly-resampler==0.9.1
 pmdarima==2.0.3
-prompt-toolkit @ file:///home/conda/feedstock_root/build_artifacts/prompt-toolkit_1688565951714/work
 prophet==1.1.4
-psutil @ file:///C:/Windows/Temp/abs_b2c2fd7f-9fd5-4756-95ea-8aed74d0039flsd9qufz/croots/recipe/psutil_1656431277748/work
-pure-eval @ file:///home/conda/feedstock_root/build_artifacts/pure_eval_1642875951954/work
-Pygments @ file:///home/conda/feedstock_root/build_artifacts/pygments_1691408637400/work
 pyod==1.1.0
 pyparsing==3.1.1
-python-dateutil @ file:///home/conda/feedstock_root/build_artifacts/python-dateutil_1626286286081/work
 pytorch-lightning==2.0.5
 pytz==2023.3.post1
 pywin32==305.1
 PyYAML==6.0.1
-pyzmq @ file:///D:/bld/pyzmq_1660329059232/work
 qpd==0.4.4
 regex==2023.8.8
 requests==2.31.0
@@ -93,8 +69,6 @@ scikit-learn==1.3.0
 scipy==1.11.2
 seaborn==0.12.2
 shap==0.42.1
-six @ file:///home/conda/feedstock_root/build_artifacts/six_1620240208055/work
-stack-data @ file:///home/conda/feedstock_root/build_artifacts/stack_data_1669632077133/work
 statsforecast==1.5.0
 statsmodels==0.14.0
 sympy==1.12
@@ -106,17 +80,12 @@ torch==2.0.1+cu118
 torchaudio==2.0.2+cu118
 torchmetrics==1.0.1
 torchvision==0.15.2+cu118
-tornado @ file:///D:/bld/tornado_1656937966227/work
 tqdm==4.66.1
-traitlets @ file:///home/conda/feedstock_root/build_artifacts/traitlets_1694710374095/work
 transformers==4.33.2
 triad==0.9.1
 tsdownsample==0.1.2
-typing_extensions @ file:///home/conda/feedstock_root/build_artifacts/typing_extensions_1695040754690/work
 tzdata==2023.3
 urllib3==2.0.5
-wcwidth @ file:///home/conda/feedstock_root/build_artifacts/wcwidth_1673864653149/work
 xarray==2023.6.0
 xgboost==1.7.6
 yarl==1.9.2
-zipp @ file:///home/conda/feedstock_root/build_artifacts/zipp_1695255097490/work
