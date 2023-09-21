@@ -4,8 +4,6 @@ from bs4 import BeautifulSoup
 import re
 import pickle
 import base64
-import boto3
-# from transformers import (AutoTokenizer, BartForConditionalGeneration)
 
 def get_img(file):
         with open(file, "rb") as f:
@@ -101,7 +99,6 @@ def main():
     with open('best_model1.pkl', 'rb') as file:
         loaded_model = pickle.load(file)
 
-    loaded_model = load_ptm()
 
     # Create two columns for the buttons
     col1, col2 = st.columns(2)
