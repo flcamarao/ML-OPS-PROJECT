@@ -43,7 +43,7 @@ networkx==3.1
 nfoursid
 nltk==3.8.1
 numba
-numpy
+numpy>=1.21,<1.25
 package-name==0.1
 pandas==2.1.1
 patsy==0.5.3
