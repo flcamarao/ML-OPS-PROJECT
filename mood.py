@@ -65,7 +65,7 @@ def main():
     # classify_container = st.container()
 
     # Load the saved model using pickle
-    with open('best_model1.pkl', 'rb') as file:
+    with open('best_model_v2.pkl', 'rb') as file:
         loaded_model = pickle.load(file)
 
 
