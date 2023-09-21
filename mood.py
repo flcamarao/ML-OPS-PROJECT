@@ -17,37 +17,6 @@ def main():
     # Textbox for user input (URL)
     url = st.text_input("Enter URL:", "")
 
-    @st.cache_data
-    def load_ptm():
-        # Replace these with your actual values
-        BUCKET_NAME = "s3-mlops"
-        KEY = "best_model1.pkl"
-        ACCESS_KEY = "AKIARUDKHMKVAUXUHUKR"
-        SECRET_KEY = "8lD/w9WSMMwSIPT2/8en9HUx0buuqhqYr67qZd77"
-
-        # Initialize the S3 client
-        s3 = boto3.client(
-            's3',
-            aws_access_key_id=ACCESS_KEY,
-            aws_secret_access_key=SECRET_KEY,
-        )
-
-        try:
-            # Retrieve the pickle file from S3
-            response = s3.get_object(Bucket=BUCKET_NAME, Key=KEY)
-            # st.warning('got my pickle?')
-            # Read the pickle data from the response
-            pickle_data = response['Body'].read()
-            # st.warning('preparing my pickle')
-            # Deserialize the pickle data
-            loaded_data = pickle.loads(pickle_data)
-            # st.warning('loading the pickle')
-            return loaded_data
-            # Now, 'loaded_data' contains the deserialized data from "best_model1.pkl"
-        except Exception as e:
-            st.warning('warn me')
-            print(f"Error: {e}")
-
     # Function to get text from a web page
     def get_text_from_link(url):
         if url:
